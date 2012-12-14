@@ -8,10 +8,10 @@ lsl r1,#18
 str r1,[r0,#4]
 
 loop$:
-b loop$
+    b loop$
 
 mov r2,#0x3F0000
 wait$:
-sub r2,#1
-cmp r2,#0
+    sub r2,#1
+    cmp r2,#0
 bne wait$
